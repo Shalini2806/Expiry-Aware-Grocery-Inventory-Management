@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us |Safe Bite </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="{{ url_for('static', filename='bg2.jpg') }}">
+        <span>Safe Bite</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+       
+        <li><a href="/about">About</a></li>
+    </ul>
+</nav>
+
+<!-- About Section -->
+<section class="about-section">
+    <div class="about-card">
+        <h1>~ About Us ~</h1>
+
+        <h2>Helping You Waste Less, Live More</h2>
+
+        <p>
+            Safe Bite is an AI-powered smart grocery expiry detection system designed to reduce food waste and enhance food safety. Our platform helps storekeepers and users monitor product shelf life efficiently by analyzing expiry dates, inventory data, and storage conditions.
+        </p>
+
+        <p>
+           By combining Artificial Intelligence and Machine Learning, Safe Bite provides accurate expiry status detection and risk prediction, enabling timely decisions such as stock rotation, discounts, or removal of expired items. The system simplifies inventory management through an easy-to-use web interface that supports CSV uploads and instant result visualization.
+        </p>
+
+        <p>We believe that smart technology can lead to responsible consumption. Safe Bite aims to support sustainable practices, minimize food wastage, and ensure safer food handling in grocery stores and retail environments.</p>
+    </div>
+</section>
+
+</body>
+</html>

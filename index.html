@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Safe Bite</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="{{ url_for('static', filename='bg2.jpg') }}">
+        <span>Safe Bite</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>SAFE BITE</h1>
+    <h3>Smart Grocery Expiry Detection System Using AI and Machine Learning</h3>
+    <p>Reduce waste with AI-powered expiry prediction</p>
+</section>
+
+<section id="upload">
+    <div class="upload-card">
+        <h2>Upload Grocery CSV</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Predict Expiry TimeStamp</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

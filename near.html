@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Near Expiry Products</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2 class="near-title">Near Expiry Products</h2>
+
+<div class="table-box">
+    {{ table|safe }}
+</div>
+
+<a href="javascript:history.back()" class="back">⬅ Back</a>
+
+</body>
+</html>

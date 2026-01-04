@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2 class="title">Expiry Timestamp Prediction Result</h2>
+
+<div class="cards animate-cards">
+    <a href="/safe" class="card safe fade-in">
+        <h3>Safe</h3>
+        <p>{{ safe_count }}</p>
+    </a>
+
+    <a href="/near-expiry" class="card near fade-in delay-1 ">
+        <h3>Near Expiry</h3>
+        <p>{{ near_count }}</p>
+    </a>
+
+    <a href="/expired" class="card expired fade-in delay-2">
+        <h3>Expired</h3>
+        <p>{{ expired_count }}</p>
+    </a>
+</div>
+
+</body>
+</html>
